@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>Hello world!</h1>
-	<h1>Hiiii</h1>
+	<h1>Hiii</h1>
 	<P>The time on the server is ${serverTime}.</p>
 
 	<form action="user" method="post">
