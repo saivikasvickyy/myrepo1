@@ -22,12 +22,13 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		System.out.println("Home Page Requested, locale = " + locale);
+		System.out.println("Locale Country:"+ locale.getCountry());
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
- 
 		String formattedDate = dateFormat.format(date);
 
 		model.addAttribute("serverTime", formattedDate);
+		model.addAttribute("countryName",locale.getCountry());
 
 		return "home";
 	}

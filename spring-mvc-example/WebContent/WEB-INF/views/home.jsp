@@ -10,6 +10,7 @@
 <body>
 	<h1>This is not good and so changed in 4003!</h1>
 	<P>The time on the server is ${serverTime}.</p>
+	<p>The country is : ${countryName}</p>
 	<form action="user" method="post">
 		<input type="text" name="userName"><br> 
 		<input type="text" name="passWord"><br> <input
